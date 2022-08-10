@@ -1,0 +1,26 @@
+.ta_c {
+  text-align: center;
+}
+
+.d_f {
+  display: flex;
+}
+
+.d_g {
+  display: grid;
+}
+
+.ai_c {
+  align-items: center;
+}
+
+.ai_s {
+  align-items: flex-start;
+}
+
+.jc_c {
+  justify-content: center;
+}
+.fd_c {
+  flex-direction: column;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/media.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="destination_section">
+      <header>
+        <nav>
+          <div class="nav_logo">
+            <img src="../assets/shared/logo.svg" alt="" />
+          </div>
+          <ul class="nav_list-items">
+            <li class="nav_list--item">
+              <a href="./index.html">
+                <span>00</span>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav_list--item nav--active">
+              <a href="./destination.html"
+                ><span>01</span>
+                <p>Destination</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a href="#"
+                ><span>02</span>
+                <p>Crew</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a href="#"
+                ><span>03</span>
+                <p>Technology</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="destination_header">
+          <span>01</span>
+          <p>PICK YOUR DESTINATION</p>
+        </div>
+        <div class="destination_contents">
+          <div class="destination_image-area destination_image--active">
+            <img
+              class="destination_image destination_image--active destination_image--1"
+              src="../assets/destination/image-moon.png"
+              alt=""
+            />
+          </div>
+          <div class="destination_image-area">
+            <img
+              class="destination_image destination_image--2"
+              src="../assets/destination/image-mars.png"
+              alt=""
+            />
+          </div>
+          <div class="destination_image-area">
+            <img
+              class="destination_image destination_image--3"
+              src="../assets/destination/image-europa.png"
+              alt=""
+            />
+          </div>
+          <div class="destination_image-area">
+            <img
+              class="destination_image destination_image--4"
+              src="../assets/destination/image-titan.png"
+              alt=""
+            />
+          </div>
+          <div class="destination_text-area">
+            <ul class="destination_list">
+              <li class="destination_list-item destination_list--active">
+                Moon
+              </li>
+              <li class="destination_list-item" data-destination="1">Mars</li>
+              <li class="destination_list-item" data-destination="2">Europa</li>
+              <li class="destination_list-item" data-destination="3">Titan</li>
+            </ul>
+            <h2 class="selected_destination" data-destination="4">Moon</h2>
+            <p
+              class="destination_info destination_content destination_content--1 destination_content--active"
+            >
+              See our planet as you've never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you're there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <div
+              class="destination_stats destination-stats--1 destination-stats--active"
+            >
+              <div class="destination_distace">
+                <span>AVG. DISTANCE</span>
+                <p>384,400 km</p>
+              </div>
+              <div class="travel_time">
+                <span>EST TRAVEL TIME</span>
+                <p>3 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main>
+        <!-- <div class="home_text-area">
+          <h2>
+            SO, YOU WANT TO TRAVEL TO<br />
+            <span class="space_text">SPACE</span>
+          </h2>
+          <p>
+            Let's face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we'll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div class="home_image-area">
+          <div class="home__image">EXPLORE</div>
+        </div> -->
+      </main>
+    </section>
+  </body>
+</html>
