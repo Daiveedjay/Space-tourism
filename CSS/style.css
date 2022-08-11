@@ -23,7 +23,8 @@ body {
 }
 
 .home_section,
-.destination_section {
+.destination_section,
+.crew_section {
   width: 100%;
   height: 100vh;
 }
@@ -51,8 +52,6 @@ nav {
   padding: 2rem 0;
   padding-left: 3rem;
   height: 100%;
-
-  /* background: #999; */
 }
 
 .nav_list-items {
@@ -63,6 +62,7 @@ nav {
   padding-left: 4rem;
   gap: 6rem;
   list-style: none;
+  transition: 1.5s all ease-in;
 }
 
 .nav_list--item a {
@@ -86,13 +86,20 @@ nav {
   color: #e6e6e6;
 }
 
+.nav_list--item:hover {
+  border-bottom: 2px solid #797777;
+}
+
 .nav--active {
   border-bottom: 2px solid #fff;
 }
 
 /* MAIN SECTION STYLING */
+
 .home_section main {
   display: flex;
+}
+main {
   height: 80%;
 }
 
@@ -114,17 +121,21 @@ nav {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 300;
   font-size: 2.8rem;
+  color: #d2d2d2;
 }
 
 .home_text-area .space_text {
   font-size: 10rem;
   font-family: "Bellefair", serif;
+  color: #fff;
 }
 .home_text-area p {
   width: 50%;
   line-height: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #b3b3b3;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bellefair", serif;
 }
 
 .home_image-area {
@@ -144,10 +155,10 @@ nav {
   font-size: 3rem;
 }
 
-/* DESTINATION SECTION STYLING */
+/* /////////////////////////////////////
+DESTINATION SECTION STYLING
+///////////////////////////////////// */
 .destination_section {
-  /* border: 2px solid red; */
-  /* background: red; */
   background: url("../assets/destination/background-destination-desktop.jpg");
   background-position: center center;
   background-size: cover;
@@ -157,24 +168,6 @@ nav {
 .destination_section main {
   max-width: 100rem;
   margin: 0 auto;
-  /* border: 2px solid rgb(119, 0, 255); */
-  /* height: 80%; */
-}
-
-/* DESTINATION HEADER STYLING */
-.destination_header {
-  /* border: 2px solid red; */
-  display: flex;
-  padding: 2rem;
-  font-size: 2rem;
-  gap: 1rem;
-  font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 0.2rem;
-}
-
-.destination_header span {
-  font-weight: 600;
-  color: #797777;
 }
 
 /* DESTINATION CONTENT STYLING */
@@ -189,16 +182,13 @@ nav {
   padding: 2rem;
 }
 
-/* DESTINATION IMAGE AREA STLYING */
+/*DESTINATION IMAGE AREA STLYING*/
 .destination_image-area {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.destination_image-area {
-  display: none;
-}
 .destination_image {
   width: 350px;
   display: none;
@@ -226,16 +216,19 @@ nav {
   padding-bottom: 5px;
   cursor: pointer;
 }
-
-/* .destination_list--active {
-  border-bottom: 2px solid #fff;
-} */
+.destination_list-item:hover {
+  border-bottom: 2px solid #797777;
+}
 
 .selected_destination {
   font-size: 7.5rem;
   font-family: "Bellefair", serif;
   font-weight: 500;
   text-transform: uppercase;
+  display: none;
+}
+.destination--active {
+  display: flex;
 }
 
 .destination_info {
@@ -277,16 +270,58 @@ nav {
   font-family: "Bellefair", serif;
 }
 
-.destination_image--active {
-  display: block;
+.destination_content {
+  display: none;
 }
+
 .destination_list--active {
   border-bottom: 2px solid #fff;
 }
 .destination_content--active {
-  display: block;
+  display: flex;
 }
 
-.destination-stats--active {
+.destination_stats--active {
   display: flex;
+}
+
+.destination_image--active {
+  display: flex;
+}
+
+/* /////////////////////////////////////
+CREW SECTION STYLING
+///////////////////////////////////// */
+.crew_section {
+  background: url("../assets/crew/background-crew-desktop.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.crew_header {
+  border: 2px solid green;
+}
+
+.crew_section main {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.crew_contents {
+  display: flex;
+  height: 80%;
+}
+
+.crew_text-area,
+.crew_image-area {
+  flex: 1;
+  border: 2px solid red;
+}
+.crew_image-area {
+  display: flex;
+  justify-content: center;
+}
+.crew_image-area img {
+  width: 350px;
 }

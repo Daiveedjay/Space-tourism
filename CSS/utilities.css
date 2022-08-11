@@ -24,3 +24,19 @@
 .fd_c {
   flex-direction: column;
 }
+
+.header_primary {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.2rem;
+  gap: 1rem;
+  display: flex;
+}
+
+/* UTILITY HEADER STYLING */
+.destination_header span,
+.crew_header span {
+  font-weight: 600;
+  color: #797777;
+}
