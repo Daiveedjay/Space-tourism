@@ -36,7 +36,8 @@
 
 /* UTILITY HEADER STYLING */
 .destination_header span,
-.crew_header span {
+.crew_header span,
+.technology_header span {
   font-weight: 600;
-  color: #797777;
+  color: #999999;
 }
