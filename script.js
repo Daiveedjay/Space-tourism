@@ -1,5 +1,6 @@
 "use strict";
 
+// Constant declarations
 const destinationButton = document.querySelectorAll(".destination_list-item");
 
 const destinationButtonContainer = document.querySelector(".destination_list");
@@ -17,7 +18,7 @@ destinationButtonContainer.addEventListener("click", function (e) {
   // Guard clause
   if (!clicked) return;
 
-  // Remove active classes
+  // Remove all active classes
   destinationButton.forEach((e) =>
     e.classList.remove("destination_list--active")
   );
@@ -36,9 +37,10 @@ destinationButtonContainer.addEventListener("click", function (e) {
     e.classList.remove("destination_image--active")
   );
 
-  // Activate tab
+  // Activate active destination
   clicked.classList.add("destination_list--active");
 
+  // Adding active class with respect to data destination number
   document
     .querySelector(`.destination--${clicked.dataset.destination}`)
     .classList.add("destination--active");
