@@ -28,21 +28,15 @@ if (destinationButtonContainer) {
         e.classList.remove("destination_list--active")
       );
 
-      destinationContent.forEach((e) =>
-        e.classList.remove("destination_content--active")
-      );
+      destinationContent.forEach((e) => e.classList.remove("active--class"));
 
       seclectedDestination.forEach((e) =>
         e.classList.remove("destination--active")
       );
 
-      destinationStats.forEach((e) =>
-        e.classList.remove("destination_stats--active")
-      );
+      destinationStats.forEach((e) => e.classList.remove("active--class"));
 
-      destinationImage.forEach((e) =>
-        e.classList.remove("destination_image--active")
-      );
+      destinationImage.forEach((e) => e.classList.remove("active--class"));
 
       // Activate active destination
       clicked.classList.add("destination_list--active");
@@ -53,13 +47,13 @@ if (destinationButtonContainer) {
         .classList.add("destination--active");
       document
         .querySelector(`.destination_content--${clicked.dataset.destination}`)
-        .classList.add("destination_content--active");
+        .classList.add("active--class");
       document
         .querySelector(`.destination_stats--${clicked.dataset.destination}`)
-        .classList.add("destination_stats--active");
+        .classList.add("active--class");
       document
         .querySelector(`.destination_image--${clicked.dataset.destination}`)
-        .classList.add("destination_image--active");
+        .classList.add("active--class");
     });
 }
 
@@ -87,13 +81,13 @@ if (crewButtonContainer) {
     // Remove all active classes
     crewButton.forEach((e) => e.classList.remove("crew_button--active"));
 
-    crewPosition.forEach((e) => e.classList.remove("crew_position--active"));
+    crewPosition.forEach((e) => e.classList.remove("active--class"));
 
-    crewName.forEach((e) => e.classList.remove("crew_name--active"));
+    crewName.forEach((e) => e.classList.remove("active--class"));
 
-    crewBio.forEach((e) => e.classList.remove("crew_bio--active"));
+    crewBio.forEach((e) => e.classList.remove("active--class"));
 
-    crewImage.forEach((e) => e.classList.remove("crew_image--active"));
+    crewImage.forEach((e) => e.classList.remove("active--class"));
 
     // Activate active crew
     clicked.classList.add("crew_button--active");
@@ -101,16 +95,16 @@ if (crewButtonContainer) {
     // Adding active class with respect to data destination number
     document
       .querySelector(`.crew_position--${clicked.dataset.crew}`)
-      .classList.add("crew_position--active");
+      .classList.add("active--class");
     document
       .querySelector(`.crew_name--${clicked.dataset.crew}`)
-      .classList.add("crew_name--active");
+      .classList.add("active--class");
     document
       .querySelector(`.crew_bio--${clicked.dataset.crew}`)
-      .classList.add("crew_bio--active");
+      .classList.add("active--class");
     document
       .querySelector(`.crew_image--${clicked.dataset.crew}`)
-      .classList.add("crew_image--active");
+      .classList.add("active--class");
   });
 }
 
@@ -135,24 +129,39 @@ if (techButtonContainer) {
     // Remove all active classes
     techButton.forEach((e) => e.classList.remove("technology_list--active"));
 
-    techHeader.forEach((e) =>
-      e.classList.remove("technology_lead-header--active")
-    );
-    techInfo.forEach((e) => e.classList.remove("technology_info--active"));
+    techHeader.forEach((e) => e.classList.remove("active--class"));
+    techInfo.forEach((e) => e.classList.remove("active--class"));
 
-    techImage.forEach((e) => e.classList.remove("technology_image--active"));
+    techImage.forEach((e) => e.classList.remove("active--class"));
     // Activate active crew
     clicked.classList.add("technology_list--active");
 
     // Adding active class with respect to data destination number
     document
       .querySelector(`.technology_lead-header--${clicked.dataset.tech}`)
-      .classList.add("technology_lead-header--active");
+      .classList.add("active--class");
     document
       .querySelector(`.technology_info--${clicked.dataset.tech}`)
-      .classList.add("technology_info--active");
+      .classList.add("active--class");
     document
       .querySelector(`.technology_image--${clicked.dataset.tech}`)
-      .classList.add("technology_image--active");
+      .classList.add("active--class");
   });
 }
+
+///////////////////////MOBILE NAVIGATION
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileIcon = document.querySelector(".nav-open");
+const overlay = document.querySelector(".overlay");
+
+mobileIcon.addEventListener("click", function () {
+  mobileNav.classList.toggle("active");
+
+  if (mobileNav.classList.contains("active")) {
+    mobileIcon.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+    overlay.classList.add("dark-overlay");
+  } else {
+    mobileIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+    overlay.classList.remove("dark-overlay");
+  }
+});
