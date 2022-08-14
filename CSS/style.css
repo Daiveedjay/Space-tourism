@@ -113,6 +113,10 @@ header {
   position: relative;
 }
 
+.test {
+  position: relative;
+}
+
 nav {
   padding: 2rem 0;
   padding-left: 3rem;
@@ -153,7 +157,7 @@ nav {
 
 /* MAIN SECTION STYLING */
 main {
-  height: 80%;
+  /* height: 80%; */
 }
 
 .home_text-area,
@@ -378,7 +382,7 @@ CREW SECTION STYLING
 }
 
 .crew_contents {
-  height: 80%;
+  border: 2px solid yellow;
 }
 
 .crew_text-area,
@@ -426,10 +430,11 @@ CREW SECTION STYLING
 }
 
 .crew_image {
+  max-width: 250px;
   height: 100%;
   display: none;
 }
-
+/* 
 .crew_image--1 {
   width: 320px;
 }
@@ -441,7 +446,7 @@ CREW SECTION STYLING
 }
 .crew_image--4 {
   width: 350px;
-}
+} */
 
 /* /////////////////////////////////////
 TECHNOLOGY SECTION STYLING
@@ -508,6 +513,11 @@ TECHNOLOGY SECTION STYLING
 .technology_image {
   width: 350px;
   display: none;
+}
+
+/* MOBILE NAV ACTIVE CLASS */
+.mobile--active {
+  border-bottom: 2px solid #fff;
 }
 
 /* JAVASCRIPT ACTIVE CLASSES */
