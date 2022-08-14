@@ -48,14 +48,80 @@
     /* 8px per rem} */
     /* font-size: 50%; */
   }
+
+  header {
+    /* height: 15%; */
+  }
+
+  .home_section main {
+    row-gap: 2rem;
+  }
+
+  main {
+    /* height: 85%; */
+    /* margin-top: 4rem; */
+  }
+
+  nav {
+    border: 2px solid blue;
+    padding: 1.5rem;
+    padding-left: 2rem;
+  }
+
+  .nav_logo img {
+    width: 35px;
+  }
+
+  .home_section {
+    background: url("../assets/home/background-home-tablet.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .nav_list-items {
     padding-right: 4rem;
+    gap: 4rem;
   }
 
   .home_text-area {
     flex: 1.2;
   }
 
+  /* .home_section main {
+    flex-direction: column;
+  }
+
+  .home_text-area h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .space_text {
+    font-size: 6rem;
+  }
+
+  .text_primary {
+    line-height: 2rem;
+  }
+
+  .home_text-area p {
+    width: 30rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .home_image {
+    width: 17.5rem;
+    height: 17.5rem;
+  } */
+}
+
+/* 800px and below */
+@media (max-width: 50em) {
+  main {
+    /* height: 85%; */
+    margin-top: 4rem;
+  }
   .home_section main {
     flex-direction: column;
   }
@@ -83,10 +149,6 @@
     width: 17.5rem;
     height: 17.5rem;
   }
-}
-
-/* 800px and below */
-@media (max-width: 50em) {
   .destination_contents {
     flex-direction: column;
   }
@@ -95,8 +157,27 @@
     width: 150px;
   }
 
+  .destination_list {
+    margin-bottom: 2rem;
+    /* justify-content: center; */
+  }
+
+  .destination_content {
+    /* text-align: center; */
+    padding-bottom: 1.25rem;
+  }
+
+  .destination_stats {
+    padding-top: 1rem;
+    /* justify-content: center; */
+  }
+
   .crew_contents {
     flex-direction: column;
+  }
+
+  .crew_text-area {
+    /* gap: 1.5rem; */
   }
 
   .crew_text-area,
@@ -107,6 +188,26 @@
   /* .crew_image--1 {
     width: 150px;
   } */
+  .crew_position {
+    font-size: 1.5rem;
+  }
+  .crew_name {
+    font-size: 2.5rem;
+  }
+
+  .crew_image {
+    width: 16rem;
+  }
+
+  .crew_image--2 {
+    width: 13.5rem;
+  }
+  .crew_image--3 {
+    width: 17rem;
+  }
+  .crew_image--4 {
+    width: 17rem;
+  }
 }
 
 /* 700px and below */
@@ -124,15 +225,60 @@
   }
 }
 
+/* 600px and below */
+@media (max-width: 37.5em) {
+  .destination_text-area {
+    padding: 1rem 2rem;
+  }
+  .destination_stats p {
+    font-size: 2rem;
+  }
+
+  .crew_image--2 {
+    width: 13.5rem;
+  }
+  .crew_image--3 {
+    width: 17rem;
+  }
+}
 /* 500px and below */
 @media (max-width: 31.25em) {
   html {
     /* 6px per rem */
     /* font-size: 37.5%; */
   }
+
+  .home_section {
+    background: url("../assets/home/background-home-mobile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .crew_image--1 {
+    width: 14rem;
+  }
+  .crew_image--3 {
+    width: 15rem;
+  }
 }
 
+/* 450px and below */
 @media (max-width: 28.125em) {
+  .destination_list {
+    justify-content: center;
+  }
+  .destination_text-area {
+    text-align: center;
+  }
+
+  .destination_text-area {
+    padding: 1rem;
+  }
+
+  .destination_stats {
+    justify-content: center;
+  }
   .mobile-list-item {
     font-size: 1.3rem;
   }
@@ -140,11 +286,98 @@
   .mobile-list-item a span {
     font-size: 2rem;
   }
+
+  .mobile-nav-slide {
+    width: 50vw;
+  }
+
+  .crew_text-area {
+    padding: 1rem 2rem;
+  }
+
+  .crew_image {
+    width: 14.5rem;
+  }
+
+  .crew_image--2 {
+    width: 12rem;
+  }
+
+  .crew_image--3 {
+    width: 13.5rem;
+  }
+  .crew_image--4 {
+    width: 17.5rem;
+  }
 }
+
+/* 365px and below */
+@media (max-width: 22.8215em) {
+  .destination_image {
+    width: 130px;
+  }
+
+  .crew_position {
+    font-size: 1.3rem;
+  }
+
+  .crew_name {
+    font-size: 2rem;
+  }
+
+  .crew_image {
+    width: 13.5rem;
+  }
+
+  .crew_image--2 {
+    width: 12.5rem;
+  }
+  .crew_image--4 {
+    width: 15.5rem;
+  }
+}
+
+/* 330px and below */
+@media (max-width: 20.625em) {
+  .crew_image {
+    width: 11.5rem;
+  }
+
+  .crew_image--1 {
+    width: 13.5rem;
+  }
+
+  .crew_image--2 {
+    width: 11rem;
+  }
+  .crew_image--3 {
+    width: 12.5rem;
+  }
+
+  .crew_image--4 {
+    width: 15rem;
+  }
+}
+
 /* 300px and below */
 @media (max-width: 18.75em) {
   html {
     /* 5px per rem */
     /* font-size: 31.25%; */
+  }
+
+  .crew_image--1 {
+    width: 12.5rem;
+  }
+
+  .crew_image--2 {
+    width: 10rem;
+  }
+  .crew_image--3 {
+    width: 12.5rem;
+  }
+
+  .crew_image--4 {
+    width: 15rem;
   }
 }
