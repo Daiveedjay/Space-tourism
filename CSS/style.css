@@ -94,7 +94,6 @@ body {
 .technology_section {
   width: 100%;
   height: 100vh;
-  border: 2px solid red;
 }
 /* UTILITY ENDING */
 
@@ -108,14 +107,9 @@ body {
 
 /* NAVIGATION STYLING */
 header {
-  height: auto;
-  border: 2px solid red;
+  /* height: auto; */
   position: relative;
 }
-
-/* .test {
-  position: relative;
-} */
 
 nav {
   padding: 2rem 0;
@@ -129,7 +123,6 @@ nav {
   padding-left: 4rem;
   gap: 6rem;
   list-style: none;
-  /* transition: 1.5s all ease-in; */
 }
 
 .nav_list--item a {
@@ -157,8 +150,6 @@ nav {
 
 /* MAIN SECTION STYLING */
 main {
-  /* height: 80%; */
-  height: auto;
   margin-top: 10rem;
 }
 
@@ -211,7 +202,7 @@ main {
 .mobile-nav {
   position: absolute;
   right: 20px;
-  top: 12.5px;
+  top: 7.5px;
   font-size: 3rem;
   display: none;
   z-index: 3;
@@ -233,8 +224,8 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40vw;
-  height: calc(100vh - 50px);
+  width: 50vw;
+  height: calc(100vh - 12.5px);
   backdrop-filter: blur(40px);
   transform: translateX(100%);
   display: none;
@@ -261,6 +252,11 @@ main {
   color: #fff;
   letter-spacing: 0.1rem;
   font-family: "Barlow Condensed", sans-serif;
+  border-bottom: 2px solid transparent;
+}
+
+.mobile-list-item a:hover {
+  border-color: var(--neutral-darker);
 }
 
 .mobile-list-item a span {
@@ -280,13 +276,10 @@ DESTINATION SECTION STYLING
 
 .destination_section main {
   width: 90%;
-
   margin: 0 auto;
-  border: 2px solid green;
 }
 
 .destination_contents {
-  border: 2px solid blue;
   height: auto;
 }
 
@@ -381,10 +374,6 @@ CREW SECTION STYLING
 .crew_section main {
   width: 90%;
   margin: 0 auto;
-}
-
-.crew_contents {
-  border: 2px solid yellow;
 }
 
 .crew_text-area,
@@ -504,13 +493,13 @@ TECHNOLOGY SECTION STYLING
 }
 
 .technology_image {
-  width: 350px;
+  width: 35rem;
   display: none;
 }
 
 /* MOBILE NAV ACTIVE CLASS */
 .mobile--active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--neutral) !important;
 }
 
 /* JAVASCRIPT ACTIVE CLASSES */
