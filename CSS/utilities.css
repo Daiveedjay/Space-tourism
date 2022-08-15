@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Bellefair&family=Open+Sans:wght@300;400;500&display=swap");
+
 /* UTILITIES */
 .ta_c {
   text-align: center;
@@ -54,8 +56,8 @@
   letter-spacing: 0.1rem;
   font-family: "Open Sans", sans-serif;
   color: var(--neutral-dark);
-  line-height: 2.2rem;
-  font-size: 1.2rem;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
