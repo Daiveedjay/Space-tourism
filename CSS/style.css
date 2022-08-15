@@ -14,6 +14,9 @@
   --neutral: #fff;
   --neutral-dark: #ccc;
   --neutral-darker: #999;
+  --text-font: "Open Sans", sans-serif;
+  --small-header-font: "Barlow Condensed", sans-serif;
+  --large-header-font: "Bellefair", serif;
   scroll-behavior: smooth;
 }
 
@@ -23,69 +26,7 @@ html {
 
 body {
   color: var(--neutral);
-  font-family: "Open Sans", sans-serif;
-}
-
-/* UTILITIES */
-.ta_c {
-  text-align: center;
-}
-
-.d_f {
-  display: flex;
-}
-
-.d_g {
-  display: grid;
-}
-
-.ai_c {
-  align-items: center;
-}
-
-.ai_fs {
-  align-items: flex-start;
-}
-
-.jc_c {
-  justify-content: center;
-}
-
-.jc_sb {
-  justify-content: space-between;
-}
-
-.jc_se {
-  justify-content: space-evenly;
-}
-.fd_c {
-  flex-direction: column;
-}
-
-.header_primary {
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 0.2rem;
-  gap: 1rem;
-  display: flex;
-}
-
-.text_primary {
-  letter-spacing: 0.1rem;
-  font-family: "Open Sans", sans-serif;
-  color: var(--neutral-dark);
-  line-height: 2.2rem;
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-/* UTILITY HEADER STYLING */
-.destination_header span,
-.crew_header span,
-.technology_header span {
-  font-weight: 600;
-  color: #999999;
+  font-family: var(--text-font);
 }
 
 .home_section,
@@ -94,27 +35,24 @@ body {
 .technology_section {
   width: 100%;
   height: 100vh;
-}
-/* UTILITY ENDING */
-
-/* HOME SECTION STYLING */
-.home_section {
-  background: url("../assets/home/background-home-desktop.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* HOME SECTION STYLING */
+.home_section {
+  background: url("../assets/home/background-home-desktop.jpg");
+}
+
 /* NAVIGATION STYLING */
 header {
-  /* height: auto; */
   position: relative;
 }
 
 nav {
   padding: 2rem 0;
   padding-left: 3rem;
-  height: 100%;
 }
 
 .nav_list-items {
@@ -129,10 +67,8 @@ nav {
   text-decoration: none;
   padding: 2rem 0rem;
   gap: 1rem;
-  align-items: center;
   font-size: 1.3rem;
-  letter-spacing: 0.2rem;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--small-header-font);
 }
 
 .nav_list--item span {
@@ -163,7 +99,7 @@ main {
 }
 
 .home_text-area h2 {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--small-header-font);
   font-weight: 300;
   font-size: 2.8rem;
   color: var(--neutral-dark);
@@ -171,16 +107,11 @@ main {
 
 .space_text {
   font-size: 10rem;
-  font-family: "Bellefair", serif;
+  font-family: var(--large-header-font);
   color: var(--neutral);
 }
 .home_text-area p {
   width: 30rem;
-}
-
-.home_image-area {
-  align-items: center;
-  justify-content: center;
 }
 
 .home_image {
@@ -190,7 +121,7 @@ main {
   border-radius: 50%;
   color: #000;
   font-size: 3rem;
-  font-family: "Bellefair", serif;
+  font-family: var(--large-header-font);
 }
 
 .home_image a {
@@ -199,8 +130,12 @@ main {
 }
 
 /* MOBILE NAVIGATION */
-.mobile-nav {
+.mobile-nav,
+.nav-open,
+.mobile-nav-slide {
   position: absolute;
+}
+.mobile-nav {
   right: 20px;
   top: 7.5px;
   font-size: 3rem;
@@ -210,7 +145,6 @@ main {
 }
 
 .nav-open {
-  position: absolute;
   top: 10px;
   right: 0;
   z-index: 100;
@@ -221,7 +155,6 @@ main {
 }
 
 .mobile-nav-slide {
-  position: absolute;
   top: 0;
   right: 0;
   width: 50vw;
@@ -250,8 +183,7 @@ main {
   text-decoration: none;
   gap: 1rem;
   color: #fff;
-  letter-spacing: 0.1rem;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--small-header-font);
   border-bottom: 2px solid transparent;
 }
 
@@ -269,18 +201,11 @@ DESTINATION SECTION STYLING
 ///////////////////////////////////// */
 .destination_section {
   background: url("../assets/destination/background-destination-desktop.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .destination_section main {
   width: 90%;
   margin: 0 auto;
-}
-
-.destination_contents {
-  height: auto;
 }
 
 .destination_image-area,
@@ -289,14 +214,20 @@ DESTINATION SECTION STYLING
   padding: 2rem;
 }
 
+.destination_image,
+.selected_destination,
+.destination_stats,
+.destination_content {
+  display: none;
+}
+
 /*DESTINATION IMAGE AREA STLYING*/
 .destination_image-area {
   perspective: 240px;
 }
 
 .destination_image {
-  width: 320px;
-  display: none;
+  width: 32rem;
 }
 
 /* DESTINATION TEXT AREA STLYING */
@@ -307,10 +238,8 @@ DESTINATION SECTION STYLING
 .destination_list {
   list-style: none;
   gap: 2rem;
-  text-transform: uppercase;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--small-header-font);
   font-size: 1.4rem;
-  letter-spacing: 0.2rem;
 }
 
 .destination_list-item {
@@ -323,10 +252,8 @@ DESTINATION SECTION STYLING
 
 .selected_destination {
   font-size: 7.5rem;
-  font-family: "Bellefair", serif;
+  font-family: var(--large-header-font);
   font-weight: 500;
-  text-transform: uppercase;
-  display: none;
 }
 
 .destination_stats {
@@ -340,25 +267,15 @@ DESTINATION SECTION STYLING
   gap: 1rem;
 }
 
-.destination_stats {
-  display: none;
-}
-
 .destination_stats span {
   font-size: 1.4rem;
-  letter-spacing: 0.1rem;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--small-header-font);
   color: var(--neutral-dark);
 }
 
 .destination_stats p {
   font-size: 2.5rem;
-  text-transform: uppercase;
-  font-family: "Bellefair", serif;
-}
-
-.destination_content {
-  display: none;
+  font-family: var(--large-header-font);
 }
 
 /* /////////////////////////////////////
@@ -366,9 +283,6 @@ CREW SECTION STYLING
 ///////////////////////////////////// */
 .crew_section {
   background: url("../assets/crew/background-crew-desktop.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .crew_section main {
@@ -381,6 +295,13 @@ CREW SECTION STYLING
   flex: 1;
 }
 
+.crew_position,
+.crew_name,
+.crew_bio,
+.crew_image {
+  display: none;
+}
+
 .crew_text-area {
   padding: 1rem 4rem;
   gap: 2.5rem;
@@ -389,18 +310,12 @@ CREW SECTION STYLING
 .crew_position {
   font-size: 2rem;
   color: var(--neutral-dark);
-  display: none;
-  font-family: "Bellefair", serif;
+  font-family: var(--large-header-font);
 }
 
 .crew_name {
   font-size: 4rem;
-  display: none;
-  font-family: "Bellefair", serif;
-}
-
-.crew_bio {
-  display: none;
+  font-family: var(--large-header-font);
 }
 
 .crew_buttons {
@@ -423,7 +338,6 @@ CREW SECTION STYLING
 .crew_image {
   max-width: 30rem;
   height: 100%;
-  display: none;
 }
 
 .crew_image--2 {
@@ -435,9 +349,6 @@ TECHNOLOGY SECTION STYLING
 ///////////////////////////////////// */
 .technology_section {
   background: url("../assets/technology/background-technology-desktop.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .technology_section main {
@@ -454,6 +365,12 @@ TECHNOLOGY SECTION STYLING
   flex: 1;
 }
 
+.technology_lead-header,
+.technology_info,
+.technology_image {
+  display: none;
+}
+
 .technology_lists {
   padding: 2rem;
   list-style: none;
@@ -466,7 +383,7 @@ TECHNOLOGY SECTION STYLING
   border-radius: 50%;
   font-size: 2rem;
   cursor: pointer;
-  font-family: "Bellefair", serif;
+  font-family: var(--large-header-font);
 }
 
 .technology_text-container {
@@ -476,25 +393,18 @@ TECHNOLOGY SECTION STYLING
 
 .technology_sub-header {
   font-size: 1.4rem;
-  letter-spacing: 0.1rem;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--small-header-font);
   color: var(--neutral-darker);
 }
 
 .technology_lead-header {
   font-size: 4rem;
-  font-family: "Bellefair", serif;
+  font-family: var(--large-header-font);
   font-weight: 300;
-  display: none;
-}
-
-.technology_info {
-  display: none;
 }
 
 .technology_image {
   width: 35rem;
-  display: none;
 }
 
 /* MOBILE NAV ACTIVE CLASS */
@@ -516,7 +426,7 @@ TECHNOLOGY SECTION STYLING
 }
 
 .technology_list--active {
-  background: #fff;
+  background: var(--neutral);
   color: #000;
   font-weight: 600;
 }

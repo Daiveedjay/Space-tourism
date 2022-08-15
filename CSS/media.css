@@ -110,10 +110,8 @@
 
   .destination_section {
     background: url("../assets/destination/background-destination-tablet.jpg");
+    background-size: cover;
   }
-  /* .destination_contents {
-    flex-direction: column;
-  } */
 
   .destination_image {
     width: 150px;
