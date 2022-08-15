@@ -171,10 +171,6 @@
     height: 2.5rem;
   }
 
-  .crew_image {
-    width: 32rem;
-  }
-
   .crew_image--2 {
     width: 27rem;
   }
@@ -206,7 +202,7 @@
   }
 
   .technology_image {
-    width: 30rem;
+    width: 23rem;
   }
 
   .crew_contents {
@@ -249,13 +245,6 @@
     font-size: 2rem;
   }
 
-  .crew_image {
-    width: 30rem;
-  }
-
-  .crew_image--2 {
-    width: 20rem;
-  }
   .crew_image--3 {
     width: 25rem;
   }
@@ -269,6 +258,10 @@
 
   .technology_lead-header {
     font-size: 3rem;
+  }
+
+  .technology_image {
+    width: 20rem;
   }
 }
 /* 500px and below */
@@ -297,9 +290,6 @@
     gap: 3rem;
   }
 
-  .crew_image--1 {
-    width: 25rem;
-  }
   .crew_image--2 {
     width: 20rem;
   }
@@ -330,7 +320,7 @@
   }
 
   .technology_image {
-    width: 25rem;
+    width: 18rem;
   }
 
   .mobile-nav-slide {
@@ -377,10 +367,6 @@
 
   .crew_text-area {
     padding: 1rem 2rem;
-  }
-
-  .crew_image {
-    width: 27rem;
   }
 
   .crew_image--2 {
@@ -480,7 +466,7 @@
   }
 
   .crew_image {
-    width: 40rem;
+    width: 50rem;
   }
 
   .technology_lead-header {
@@ -488,7 +474,7 @@
   }
 
   .technology_image {
-    width: 45rem;
+    width: 28rem;
   }
 
   .technology_list {
@@ -511,7 +497,7 @@
     font-size: 2.5rem;
   }
   .technology_image {
-    width: 40rem;
+    width: 25rem;
   }
 }
 
