@@ -155,7 +155,7 @@ main {
   top: 0;
   right: 0;
   width: 50vw;
-  height: calc(100vh - 12.5px);
+  height: 90vh;
   backdrop-filter: blur(40px);
   transform: translateX(100%);
   display: none;

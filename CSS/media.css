@@ -71,7 +71,7 @@
 /* 800px and below */
 @media (max-width: 50em) {
   main {
-    margin-top: 4rem;
+    /* margin-top: 6rem; */
   }
 
   .home_section {
