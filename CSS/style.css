@@ -41,9 +41,6 @@ body {
 }
 
 /* HOME SECTION STYLING */
-.home_section {
-  background: url("../assets/home/background-home-desktop.jpg");
-}
 
 /* NAVIGATION STYLING */
 header {
@@ -199,9 +196,6 @@ main {
 /* /////////////////////////////////////
 DESTINATION SECTION STYLING
 ///////////////////////////////////// */
-.destination_section {
-  background: url("../assets/destination/background-destination-desktop.jpg");
-}
 
 .destination_section main {
   width: 90%;
@@ -281,9 +275,6 @@ DESTINATION SECTION STYLING
 /* /////////////////////////////////////
 CREW SECTION STYLING
 ///////////////////////////////////// */
-.crew_section {
-  background: url("../assets/crew/background-crew-desktop.jpg");
-}
 
 .crew_section main {
   width: 90%;
@@ -347,9 +338,6 @@ CREW SECTION STYLING
 /* /////////////////////////////////////
 TECHNOLOGY SECTION STYLING
 ///////////////////////////////////// */
-.technology_section {
-  background: url("../assets/technology/background-technology-desktop.jpg");
-}
 
 .technology_section main {
   width: 90%;

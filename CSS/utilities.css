@@ -66,3 +66,19 @@
   font-weight: 600;
   color: #999999;
 }
+
+.home_section {
+  background: url("../assets/home/background-home-desktop.jpg");
+}
+
+.destination_section {
+  background: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+.crew_section {
+  background: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.technology_section {
+  background: url("../assets/technology/background-technology-desktop.jpg");
+}
