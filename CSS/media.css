@@ -49,7 +49,6 @@
   }
 
   nav {
-    /* border: 2px solid blue; */
     padding: 1.5rem;
     padding-left: 2rem;
   }
@@ -72,7 +71,7 @@
 /* 800px and below */
 @media (max-width: 50em) {
   main {
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
 
   .home_section {
