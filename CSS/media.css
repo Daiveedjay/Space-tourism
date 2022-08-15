@@ -273,6 +273,14 @@
     background-repeat: no-repeat;
   }
 
+  .home_text-area {
+    padding: 0 2rem;
+  }
+
+  .home_text-area p {
+    width: 100%;
+  }
+
   .destination_image {
     width: 35rem;
   }
@@ -408,7 +416,6 @@
     font-size: 10rem;
   }
   .home_text-area p {
-    width: 55rem;
     font-size: 3rem;
     line-height: 6rem;
   }
@@ -418,6 +425,7 @@
     height: 38rem;
     font-size: 5rem;
   }
+
   .header_primary {
     padding: 2rem 3rem;
     font-size: 4.5rem;
@@ -512,9 +520,10 @@
   }
 
   .home_text-area p {
-    width: 55rem;
-    font-size: 3rem;
+    width: 100%;
+    font-size: 2.4rem;
     line-height: 7rem;
+    padding: 1.5rem;
   }
   .destination_image {
     width: 45rem;
