@@ -65,13 +65,14 @@
 
   .home_text-area {
     flex: 1.2;
+    gap: 2rem;
   }
 }
 
 /* 800px and below */
 @media (max-width: 50em) {
   main {
-    /* margin-top: 6rem; */
+    margin-top: 15rem;
   }
 
   .home_section {
