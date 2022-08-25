@@ -40,7 +40,6 @@ body {
 .crew_section,
 .technology_section {
   width: 100%;
-  /* min-height: 100vh; */
   height: 100vh;
   background-position: center center;
   background-size: cover;
